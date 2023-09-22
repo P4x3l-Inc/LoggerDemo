@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggerApp", "LoggerApp\LoggerApp.csproj", "{45F757FF-2CBA-4666-AF67-5D691C622343}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerApp.Core", "LoggerApp.Core\LoggerApp.Core.csproj", "{5ACA1140-33EC-40E0-A597-93C99D78C42A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerApp.NewRelic", "LoggerApp.NewRelic\LoggerApp.NewRelic.csproj", "{28CB9D84-E785-4BFD-BB53-69DCA532E089}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerApp.Stackify", "LoggerApp.Stackify\LoggerApp.Stackify.csproj", "{F5268BBE-A997-404A-BCBD-66086C0D19A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerApp.Datadog", "LoggerApp.Datadog\LoggerApp.Datadog.csproj", "{CDA56BD2-C6EC-49F2-8A76-865DD3F9AF5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerApp.Loggly", "LoggerApp.Loggly\LoggerApp.Loggly.csproj", "{C2DF1594-39D6-49DE-92B7-A878A07A1FC5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45F757FF-2CBA-4666-AF67-5D691C622343}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45F757FF-2CBA-4666-AF67-5D691C622343}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45F757FF-2CBA-4666-AF67-5D691C622343}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45F757FF-2CBA-4666-AF67-5D691C622343}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5ACA1140-33EC-40E0-A597-93C99D78C42A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ACA1140-33EC-40E0-A597-93C99D78C42A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ACA1140-33EC-40E0-A597-93C99D78C42A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ACA1140-33EC-40E0-A597-93C99D78C42A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28CB9D84-E785-4BFD-BB53-69DCA532E089}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28CB9D84-E785-4BFD-BB53-69DCA532E089}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28CB9D84-E785-4BFD-BB53-69DCA532E089}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28CB9D84-E785-4BFD-BB53-69DCA532E089}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5268BBE-A997-404A-BCBD-66086C0D19A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5268BBE-A997-404A-BCBD-66086C0D19A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5268BBE-A997-404A-BCBD-66086C0D19A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5268BBE-A997-404A-BCBD-66086C0D19A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDA56BD2-C6EC-49F2-8A76-865DD3F9AF5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDA56BD2-C6EC-49F2-8A76-865DD3F9AF5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDA56BD2-C6EC-49F2-8A76-865DD3F9AF5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDA56BD2-C6EC-49F2-8A76-865DD3F9AF5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2DF1594-39D6-49DE-92B7-A878A07A1FC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2DF1594-39D6-49DE-92B7-A878A07A1FC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2DF1594-39D6-49DE-92B7-A878A07A1FC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2DF1594-39D6-49DE-92B7-A878A07A1FC5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {323AD0F8-210D-4D6A-BC6B-2FB1858A686E}
+	EndGlobalSection
+EndGlobal

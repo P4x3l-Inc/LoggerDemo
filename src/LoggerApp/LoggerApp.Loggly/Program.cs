@@ -1,4 +1,5 @@
-﻿using loggertest.Services;
+﻿using LoggerApp.Core;
+using loggertest.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -15,11 +16,12 @@ using IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureServices(services =>
     {
         services.AddSingleton<IImportService, ImportService>();
+        services.AddSingleton<IAppRunner, AppRunner>();
         services.AddLogging(config =>
         {
             config.ClearProviders();
             config.AddSerilog(Log.Logger, true);
-            
+
         });
 
         services.AddSingleton(serviceProvider =>
@@ -31,20 +33,6 @@ using IHost host = Host.CreateDefaultBuilder(args)
     })
     .Build();
 
-
-
-var importService = host.Services.GetService<IImportService>();
-
-for(int i = 0;i<10000;i++)
-{
-    try
-    {
-        importService!.Import();
-    }
-    catch(Exception ex)
-    {
-        Log.Logger.Fatal(ex, "Fatal error");
-    }
-}
+host.Services.GetService<IAppRunner>().Run();
 
 await host.RunAsync();
