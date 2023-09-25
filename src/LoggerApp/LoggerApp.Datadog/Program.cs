@@ -10,7 +10,7 @@ using Serilog.Sinks.Datadog.Logs;
 var configuration = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
 
 Log.Logger = new LoggerConfiguration()
-    .WriteTo.DatadogLogs("799d492e005bf55bd89ecb280f7761f4", configuration: new DatadogConfiguration() { Url = "https://http-intake.logs.datadoghq.eu" })
+    .WriteTo.DatadogLogs("468eae9b05c0964e41efb5cdfbd2b822", configuration: new DatadogConfiguration() { Url = "https://http-intake.logs.datadoghq.eu" })
     .WriteTo.Console()
     .CreateLogger();
 
